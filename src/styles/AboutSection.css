@@ -1,0 +1,207 @@
+.about-container {
+  animation: fadeIn 300ms ease-in-out;
+}
+
+.about-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.about-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background-color: var(--bg-secondary);
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+.profile-role {
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.profile-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+
+.about-details {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 0.5rem;
+}
+
+.tabs {
+  width: 100%;
+}
+
+.tabs-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: var(--bg-secondary);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: background-color 0.2s ease;
+}
+
+.tab:hover {
+  background-color: var(--bg-tertiary);
+}
+
+.tab.active {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+.tab-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.tab-content {
+  padding: 1.5rem;
+}
+
+.bio-content,
+.experience-content,
+.education-content,
+.interests-content {
+  color: var(--text-secondary);
+}
+
+.bio-content p,
+.interests-content p {
+  margin-bottom: 1rem;
+}
+
+.personal-info {
+  margin-top: 1rem;
+}
+
+.personal-info h4 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.personal-info ul {
+  list-style: none;
+}
+
+.personal-info li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.info-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--primary-color);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-left: 2px solid var(--border-color);
+}
+
+.timeline-item.active {
+  border-left-color: var(--primary-color);
+}
+
+.timeline-item h4 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.company {
+  font-size: 0.875rem;
+  color: var(--primary-color);
+  margin-bottom: 0.125rem;
+}
+
+.period {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  margin-top: 0.5rem;
+}
+
+.interests-list {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin: 1rem 0;
+}
+
+.interests-list li {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+

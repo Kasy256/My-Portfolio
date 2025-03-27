@@ -1,0 +1,77 @@
+.profile-header {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 500ms ease-in-out;
+}
+
+.profile-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid var(--accent-color);
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--accent-color);
+  }
+}
+
+.Names {
+  color: var(--accent-color);
+}
+
+.profile-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid var(--accent-color);
+  animation: typing-subtitle 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing-subtitle {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .profile-title {
+    font-size: 3.75rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
